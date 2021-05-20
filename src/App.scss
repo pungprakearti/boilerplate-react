@@ -1,0 +1,44 @@
+@import './main';
+
+.App {
+  padding-top: 40px;
+  padding-bottom: 80px;
+
+  &_TitleWrap {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 40px;
+
+    @include breakpoint(sm-down) {
+      flex-direction: column;
+    }
+  }
+
+  &_Title {
+    color: $blue;
+    margin: 0;
+  }
+
+  &_Author {
+    padding-left: 20px;
+    padding-bottom: 6px;
+    color: white;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  &_Github {
+    color: $blue;
+    text-decoration-color: transparent;
+    transition: color ease $transition-duration, text-decoration-color ease $transition-duration;
+
+    &:focus,
+    &:hover {
+      color: $pink;
+      text-decoration-color: $pink;
+    }
+  }
+}

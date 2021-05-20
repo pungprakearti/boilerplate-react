@@ -1,0 +1,63 @@
+@import './main';
+
+.PL {
+  margin-bottom: 40px;
+
+  & > * {
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+
+  &_TypographySample {
+    margin-bottom: 40px;
+  }
+
+  &_Colors {
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+    row-gap: 20px;
+    flex-wrap: wrap;
+
+    @include breakpoint(md-down) {
+      justify-content: flex-start;
+    }
+
+    &Palette {
+      &Title {
+        margin-bottom: 5px;
+      }
+
+      &Color {
+        width: 120px;
+        height: 120px;
+        
+        &__orange {
+          background-color: $orange;
+        }
+
+        &__cyan {
+          background-color: $cyan;
+        }
+
+        &__pink {
+          background-color: $pink;
+        }
+
+        &__blue {
+          background-color: $blue;
+        }
+
+        &__white {
+          background-color: $white;
+        }
+
+        &__black {
+          background-color: $black;
+          border: 1px solid $white;
+        }
+      }
+    }
+  }
+}
+
