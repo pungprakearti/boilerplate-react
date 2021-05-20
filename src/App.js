@@ -14,7 +14,7 @@ const App = () => {
       </div>
       <PatternLibrary />
       <footer>
-        <a href='https://www.github.com' className='App_Github'>
+        <a className='App_Github' href='https://github.com/pungprakearti/boilerplate-react' target='_blank' rel='noreferrer'>
           Check out the code
         </a>
       </footer>
